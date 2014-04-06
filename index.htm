@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)http://localhost:8081/#restaurantSupplier/41 -->
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ordering</title>
+    <meta charset="utf-8">
+
+    <style type="text/css">
+
+      *, *:before, *:after {
+        -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+      }
+      body {
+        overflow: hidden;
+        width: 80%;
+        margin: 0 auto;
+      }
+      aside {
+        display: inline-block;
+        float: left;
+        width: 30%;
+        height: auto;
+      }
+      aside ul li {
+        display: block;
+        padding: 15px;
+        cursor: pointer;
+      }
+      .main {
+        display: inline-block;
+        float: left;
+        width: 70%;
+        height: 50px;
+      }
+      .active {
+        background-color: #cccccc;
+      }
+
+      .hidden {
+        display: none;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+      .main li {
+        width: 49%;
+        list-style-position: inside;
+        float: left;
+      }
+    </style>
+    <aside>
+      <ul>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 1</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 2</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 3</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 4</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 5</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 6</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 7</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 8</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 9</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class='topic'>Topic
+          <div class="hidden">
+            <h1>Content 10</h1>
+            <ul>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+              <li><a href="#">link</a></li>
+            </ul>
+          </div>
+        </li>
+        
+      </ul>
+    </aside>
+    <section class="main">
+
+    </section>
+
+    
+<script ype="text/javascript" src="css/jquery.js"></script>    
+<script type="text/javascript">
+        $('document').ready(function(){
+          var listItems = $('.topic');
+          listItems.click(function(){
+            var hidden = $(this).find('.hidden').html();
+            $(this).addClass('active');
+            $(this).siblings().removeClass('active');
+            $('.main').html(hidden)
+          })
+          $(".topic:first-child").trigger('click');
+        });
+</script>
+</body>
+</html>
